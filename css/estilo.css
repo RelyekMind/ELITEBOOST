@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+display: grid;
+grid-template-columns: repeat(6,1fr);
+grid-template-rows: 150px auto 160px;
+grid-template-areas: 
+    "header header header header header header"
+    "main main main main main main"
+    "footer footer footer footer footer footer"
+;
+
+flex-direction: column;
+background-repeat: no-repeat;
+background-image: url(../imagenes/mapavalorant.jpg);
+background-size: cover;
+  background-position-y: 45%;
+}
+
+header{
+  grid-area: header;
+}
+
+.icono-name{
+  color: #fff;
+}
+.enlace{
+  position: absolute;
+  padding: 70px 50px;
+  display: flex;
+}
+.logo{
+  height: 50px;
+  color: #fff;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 180px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: #fff;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+li a.active, li a:hover{
+  background: black;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+
+main{
+    width: 100%;
+    grid-area: main;
+    display: grid;
+    flex-grow: 1;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(7,1fr);
+    grid-template-areas: 
+    "sobreNosotros sobreNosotros sobreNosotros sobreNosotros-imagen sobreNosotros-imagen"
+    "sobreNosotros sobreNosotros sobreNosotros sobreNosotros-imagen sobreNosotros-imagen"
+    "sobreNosotros sobreNosotros sobreNosotros sobreNosotros-imagen sobreNosotros-imagen"
+    "sobreNosotros sobreNosotros sobreNosotros sobreNosotros-imagen sobreNosotros-imagen"
+    "elegirnos-titulo elegirnos-titulo elegirnos-titulo elegirnos-titulo elegirnos-titulo"
+    "elegirnos-cuerpo elegirnos-cuerpo elegirnos-cuerpo  elegirnos-cuerpo elegirnos-cuerpo"
+    "elegirnos-cuerpo elegirnos-cuerpo elegirnos-cuerpo  elegirnos-cuerpo elegirnos-cuerpo"
+    ;
+}
+.sobre-nosotros {
+  grid-area: sobreNosotros;
+   
+  padding: 60px; 
+}
+.sobre-nosotros h2{
+  font-size: 3em;  
+  color: #fff;
+}
+.sobre-nosotros h3{
+  font-size: 1.6em;
+  padding-top: 7px;
+  color: #fff;
+}
+.imagen-sobre-nosotros-container {
+  grid-area: sobreNosotros-imagen;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+  
+}
+.imagen-sobreNosotros{
+  width: auto;
+  height: 60px;
+  background-image: hover;
+  object-fit: cover;
+  object-position: center;
+}
+
+.elegirnos {
+  grid-area: elegirnos-titulo / 1 / elegirnos-cuerpo / -1;
+}
+
+.elegirnos h2 {
+  grid-area: elegirnos-titulo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  color: #fff;
+}
+
+.cuerpo-elegirnos {
+  display: flex;
+  justify-content: space-around;
+  grid-area: elegirnos-cuerpo;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: #fff;
+}
+
+.item-elegirnos {
+  text-align: center;
+}
+
+.item-elegirnos img {
+  width: 70px;
+}
+
+
+footer{
+    width: 100%;
+    grid-area: footer;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 1rem;
+    margin-top: auto;
+}
+
+.metodos-pago {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1;
+  grid-column: 1;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.metodos-pago img {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+#icono-bitcoin{
+  width: 27px;
+  height: 27px;
+}
+
+.derechos-redes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.derechos {
+  display: flex;
+  align-items: center;
+}
+
+.derechos img {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+.redes {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+
+.redes img {
+  width: 30px;
+  height: 30px;
+  margin-left: 0.7rem;
+}
+
+@media (max-width:768px){
+  .checkbtn{
+    display: block;
+    margin-top: 25px;
+    margin-left: 15px;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagenes/mapavalorant.jpg);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all.5s;
+    z-index: 10;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  li a:hover, li a.active{
+    background: none;
+    color: red;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+
+  .enlace{
+    position: absolute;
+    padding: 20px 50px;
+    display: flex;
+  }
+
+  .cuerpo-elegirnos {
+    flex-wrap: wrap;
+  }
+
+  .item-elegirnos {
+    flex-basis: 45%; 
+    margin-bottom: 20px; 
+  }
+  #main-container {
+    margin-top: 70px;
+  }
+  .sobre-nosotros h2{
+    font-size: 2.7em;  
+    color: #fff;
+  }
+  .sobre-nosotros h3{
+    font-size: 1.5em;
+    padding-top: 7px;
+    color: #fff;
+  }
+
+}
+
+@media (max-width:600px){
+  .sobre-nosotros h2{
+    font-size: 2.4em;  
+    color: #fff;
+  }
+  .sobre-nosotros h3{
+    font-size: 1.1em;
+    padding-top: 7px;
+    color: #fff;
+  }
+  .enlace{
+    position: absolute;
+    padding: 20px 50px;
+    display: flex;
+  }
+  
+}
+
+.main-container{
+  display: flex;
+  position: relative;
+  z-index: 1;
+  padding: 2%;
+  
+}
+.text-center{
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.container-fluid {
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: #172A45;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  border-radius: 15px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 30px;
+  margin-bottom: 20px;
+  
+  background-color: #0A192F;
+}
+.card-img-top {
+  margin-top: 60px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  margin: 0 auto;
+}
+
+.card-body {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-title {
+  margin-top: 10px;
+  font-size: 1.8em;
+  color: #fff;
+}
+
+.small-image{
+  margin-top: 60px;
+  max-width: 200px;
+  max-height: 90px;
+  margin-bottom: 60px;
+}
+
+.card-text {
+  font-size: 14px;
+}
