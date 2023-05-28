@@ -7,9 +7,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 body{
+margin: 0;
+padding: 0;
+display: flex;
 display: grid;
 grid-template-columns: repeat(6,1fr);
-grid-template-rows: 150px auto 160px;
+grid-template-rows: 100px auto 160px;
 grid-template-areas: 
     "header header header header header header"
     "main main main main main main"
@@ -21,6 +24,7 @@ background-repeat: no-repeat;
 background-image: url(../imagenes/mapavalorant.jpg);
 background-size: cover;
   background-position-y: 45%;
+  align-items: center;
 }
 
 header{
@@ -45,7 +49,7 @@ nav ul{
 }
 nav ul li{
   display: inline-block;
-  line-height: 180px;
+  line-height: 150px;
   margin: 0 5px;
 }
 nav ul li a{
@@ -78,6 +82,11 @@ main{
     width: 100%;
     grid-area: main;
     display: grid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
     flex-grow: 1;
     grid-template-columns: repeat(5,1fr);
     grid-template-rows: repeat(7,1fr);
@@ -91,6 +100,7 @@ main{
     "elegirnos-cuerpo elegirnos-cuerpo elegirnos-cuerpo  elegirnos-cuerpo elegirnos-cuerpo"
     ;
 }
+
 .sobre-nosotros {
   grid-area: sobreNosotros;
    
@@ -111,15 +121,13 @@ main{
   width: 100%;
   display: flex;
   justify-content: center;
-  padding-top: 30px;
-  
+  margin-bottom: 60px;
+  height: 250px;
 }
-.imagen-sobreNosotros{
+
+#imagen-sobrenosotros{
   width: auto;
-  height: 60px;
-  background-image: hover;
-  object-fit: cover;
-  object-position: center;
+  height: 13em;
 }
 
 .elegirnos {
@@ -293,7 +301,7 @@ footer{
   }
   
 }
-
+/* PAGINA EMPLEADOS */
 .main-container{
   display: flex;
   position: relative;
@@ -360,4 +368,318 @@ footer{
 
 .card-text {
   font-size: 14px;
+}
+
+/* PAGINA ELOBOOST */
+.eloboost-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    text-align: center; 
+    background-color: #172A45;
+    width: auto;
+    border-radius: 3em;
+
+}
+
+.titulo {
+  font-size: 2.5rem;
+  color: white;
+}
+#titulo-cont-izq{
+  color: white;
+  margin-bottom: 1.5em;
+}
+#titulo-cont-der{
+  color: white;
+  margin-bottom: 1.5em;
+}
+.subtitulo {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.descripcion {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.contenedor-izquierda {
+  background-color: #0A192F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.rectangulo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.item {
+  flex-basis: calc(50% - 20px);
+  margin-bottom: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.item h4,p,h2{
+  color: white;
+}
+
+.contenedor-derecha {
+  background-color: #0A192F;
+  width: auto;
+  border-radius: 0.5em;
+  padding: 20px;
+}
+
+
+.pagar {
+  margin-top: 1em;
+  text-align: left;
+}
+
+.pagar h3{
+  margin-bottom: 0.5em;
+  color: white;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#icono-lp{
+  font-size: 5em;
+}
+
+
+/* PAGINA COACHING */
+
+.coaching-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    text-align: center; 
+    background-color: #172A45;
+    width: auto;
+    border-radius: 3em;
+    
+}
+
+.titulo-coach {
+  font-size: 2.5rem;
+  color: white;
+}
+#titulo-cont-izq-coach{
+  color: white;
+  margin-bottom: 1.5em;
+}
+#titulo-cont-der-coach{
+  color: white;
+  margin-bottom: 1.5em;
+}
+.subtitulo-coach {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.descripcion-coach {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+.contenedor-izquierda-coach {
+  
+  background-color: #0A192F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+.contenedor-derecha-coach {
+  padding: 20px;
+  background-color: #0A192F;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  width: auto
+}
+
+.rango-coach {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem; 
+}
+
+.rango-coach img{
+max-width: 70px;
+max-height: 70px;
+margin-right: 1rem;
+}
+
+
+
+.rectangulo-coach {
+  flex: 1;
+  width: 250px;
+  height: 60px;
+  background-color: #172A45;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  border-radius: 7px;
+}
+.rectangulo-coach p{
+  margin: 0;
+}
+
+.checkboxes {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.checkboxes div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+.checkboxes input[type="checkbox"] {
+  margin: 0 0.5rem;
+}
+.contenido-pago-coach {
+  margin-top: 2rem;
+  text-align: left;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.contenido-pago-coach h3{
+  color: white;
+}
+.checkboxes label{
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor-izquierda-coach {
+    flex-direction: column;
+  }
+  
+  .rango-coach img {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .rectangulo-coach {
+    width: 100%;
+  }
+}
+
+/* PAGINA CONTACTO */
+
+.contacto-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.info-contacto {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+}
+.enlaces-utiles{
+  padding: 20px;
+  text-align: start;
+}
+
+.titulo-enlaces{
+  margin-bottom: 20px;
+}
+.link{
+  color: white;
+}
+.titulo-contacto {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+
+.formulario-contacto {
+  flex-basis: 50%;
+}
+
+.campo {
+  margin-bottom: 1rem;
+  color: white;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.subtitulo-contacto {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: start;
+}
+.subtitulo-contacto2{
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: start;
+  color: white;
 }

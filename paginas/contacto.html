@@ -27,55 +27,68 @@
       <li><a href="coaching.html">Coaching</a></li>
       <li><a href="empleados.html">Empleados</a></li>
       <li><a href="contacto.html">Contacto</a></li>
-      <li><a href="clientes.html">Area Clientes</a></li>
     </ul>
 </nav>
 </header>
 
-      <main>
+<main>
+  <div class="contacto-main">
+    <h1 class="titulo-contacto">CONTACTANOS</h1>
+    <div class="info-contacto">
+      <div class="formulario-contacto">
+        <h2 class="subtitulo-contacto">Envíanos un mensaje!</h2>
+        <h3 class="subtitulo-contacto2">Si necesitas ayuda, rellena este formulario. Nos pondremos en contacto contigo en menos de 12 horas </h3>
         <form>
-            <div class="form-group">
-              <label for="email">Correo electrónico:</label>
-              <input type="email" id="email" name="email" required>
-            </div>
-
-            <div class="form-group">
-              <label for="asunto">Asunto:</label>
-              <input type="text" id="asunto" name="asunto" required>
-            </div>
-
-            <div class="form-group">
-              <label for="discord">Discord:</label>
-              <input type="text" id="discord" name="discord">
-            </div>
-
-            <div class="form-group">
-              <label for="razon">Razón para contactarnos:</label>
-              <textarea id="razon" name="razon" required></textarea>
-            </div>
-
-          </form>
-      </main>
-      <footer>
-        <div class="metodos-pago">
-            <img src="../imagenes/visa.png" alt="Icono 1">
-            <img src="../imagenes/apple-pay.png" alt="Icono 2">
-            <img src="../imagenes/skrill.png" alt="Icono 3">
-            <img src="../imagenes/paypal-logo.png" alt="Icono 4">
-            <img src="../imagenes/symbols.png" alt="Icono 5">
-            <img src="../imagenes/bitcoin-logo.png" alt="Icono 6" id="icono-bitcoin">
+          <div class="campo">
+            <label for="nombre">Nombre o Nickname:</label>
+            <input type="text" id="nombre" name="nombre" required>
           </div>
-          <div class="derechos-redes">
-            <div class="derechos">
-              <small>&copy;2023 <b>EliteBoost</b> - Todos los Derechos Reservados.</small>
-            </div>
-            <div class="redes">
-              <img src="../imagenes/instagram.png" alt="Red Social 1">
-              <img src="../imagenes/facebook.png" alt="Red Social 2">
-              <img src="../imagenes/twitter.png" alt="Red Social 3">
-              <img src="../imagenes/tiktok.png" alt="Red Social 4">
-            </div>
+          <div class="campo">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
           </div>
-      </footer>
+          <div class="campo">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+
+      <div class="enlaces-utiles">
+        <h2 class="titulo-enlaces">Enlaces útiles</h2>
+        <div class="enlaces-contenedor">
+          <a href="./contacto.html" class="link">Comunidad de Discord</a>
+          <p></p>
+          <a href="./contacto.html" class="link">Soporte al Consumidor</a>
+        </div>
+      </div>
+
+    
+  </div>
+</main>
+
+
+<footer>
+  <div class="metodos-pago">
+    <img src="../imagenes/visa.png" alt="Icono 1">
+    <img src="../imagenes/apple-pay.png" alt="Icono 2">
+    <img src="../imagenes/skrill.png" alt="Icono 3">
+    <img src="../imagenes/paypal-logo.png" alt="Icono 4">
+    <img src="../imagenes/symbols.png" alt="Icono 5">
+    <img src="../imagenes/bitcoin-logo.png" alt="Icono 6" id="icono-bitcoin">
+  </div>
+  <div class="derechos-redes">
+    <div class="derechos">
+      <small>&copy;2023 <b>EliteBoost</b> - Todos los Derechos Reservados.</small>
+    </div>
+    <div class="redes">
+      <img src="../imagenes/instagram.png" alt="Red Social 1">
+      <img src="../imagenes/facebook.png" alt="Red Social 2">
+      <img src="../imagenes/twitter.png" alt="Red Social 3">
+      <img src="../imagenes/tiktok.png" alt="Red Social 4">
+    </div>
+  </div>      
+</footer>
 </body>
 </html>
