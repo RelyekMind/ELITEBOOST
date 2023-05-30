@@ -1,0 +1,113 @@
+@media (max-width: 768px) {
+  .checkbtn {
+    display: block;
+    margin-top: 25px;
+    margin-left: 15px;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../imagenes/mapavalorant.jpg);
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+    z-index: 10;
+  }
+
+  nav {
+    ul {
+      li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+
+        a {
+          font-size: 20px;
+
+          &:hover,
+          &.active {
+            background: none;
+            color: red;
+          }
+        }
+      }
+    }
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  .enlace {
+    position: absolute;
+    padding: 20px 50px;
+    display: flex;
+  }
+
+  .cuerpo-elegirnos {
+    flex-wrap: wrap;
+  }
+
+  .item-elegirnos {
+    flex-basis: 45%;
+    margin-bottom: 20px;
+  }
+
+  #main-container {
+    margin-top: 70px;
+  }
+
+  .sobre-nosotros {
+    h2 {
+      font-size: 2.7em;
+      color: #fff;
+    }
+
+    h3 {
+      font-size: 1.5em;
+      padding-top: 7px;
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .sobre-nosotros {
+    h2 {
+      font-size: 2.4em;
+      color: #fff;
+    }
+
+    h3 {
+      font-size: 1.1em;
+      padding-top: 7px;
+      color: #fff;
+    }
+  }
+
+  .enlace {
+    position: absolute;
+    padding: 20px 50px;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contenedor-izquierda-coach {
+    flex-direction: column;
+  }
+
+  .rango-coach {
+    img {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .rectangulo-coach {
+    width: 100%;
+  }
+}

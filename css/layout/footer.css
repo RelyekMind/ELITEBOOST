@@ -1,0 +1,50 @@
+footer {
+  width: 100%;
+  grid-area: footer;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-gap: 1rem;
+  margin-top: auto;
+}
+footer .metodos-pago {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-row: 1;
+  grid-column: 1;
+  justify-content: space-around;
+  margin: auto;
+}
+footer .metodos-pago img {
+  width: 50px;
+  height: 50px;
+  margin-right: 1rem;
+}
+footer .metodos-pago #icono-bitcoin {
+  width: 27px;
+  height: 27px;
+}
+footer .derechos-redes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  grid-row: 2;
+  grid-column: 1;
+}
+footer .derechos-redes .derechos {
+  display: flex;
+  align-items: center;
+}
+footer .derechos-redes .redes {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+}
+footer .derechos-redes .redes img {
+  width: 30px;
+  height: 30px;
+  margin-left: 0.7rem;
+}
+
+/*# sourceMappingURL=footer.css.map */

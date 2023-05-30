@@ -1,0 +1,50 @@
+header{
+  grid-area: header;
+}
+
+.icono-name{
+  color: #fff;
+}
+.enlace{
+  position: absolute;
+  padding: 70px 50px;
+  display: flex;
+}
+.logo{
+  height: 50px;
+  color: #fff;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+  li{
+    display: inline-block;
+    line-height: 150px;
+    margin: 0 5px;
+    a{
+      color: #fff;
+      font-size: 18px;
+      padding: 7px 13px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+}
+
+li a.active, li a:hover{
+  background: black;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}

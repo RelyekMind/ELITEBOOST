@@ -1,0 +1,122 @@
+.coaching-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em;
+  text-align: center;
+  background-color: #172A45;
+  width: auto;
+  border-radius: 3em;
+}
+
+.titulo-coach {
+  font-size: 2.5rem;
+  color: white;
+}
+
+#titulo-cont-izq-coach {
+  color: white;
+  margin-bottom: 1.5em;
+}
+
+#titulo-cont-der-coach {
+  color: white;
+  margin-bottom: 1.5em;
+}
+
+.subtitulo-coach {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.descripcion-coach {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.contenedor-izquierda-coach {
+  background-color: #0A192F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  width: auto;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.contenedor-derecha-coach {
+  padding: 20px;
+  background-color: #0A192F;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  width: auto;
+}
+
+.rango-coach {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.rango-coach img {
+  max-width: 70px;
+  max-height: 70px;
+  margin-right: 1rem;
+}
+
+.rectangulo-coach {
+  flex: 1;
+  width: 250px;
+  height: 60px;
+  background-color: #172A45;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  border-radius: 7px;
+}
+
+.rectangulo-coach p {
+  margin: 0;
+}
+
+.checkboxes {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.checkboxes div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0.5rem;
+}
+
+.checkboxes input[type=checkbox] {
+  margin: 0 0.5rem;
+}
+
+.contenido-pago-coach {
+  margin-top: 2rem;
+  text-align: left;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contenido-pago-coach h3 {
+  color: white;
+}
+
+.checkboxes label {
+  color: white;
+}
+
+/*# sourceMappingURL=coaching.css.map */

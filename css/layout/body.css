@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+* body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 100px auto 160px;
+  grid-template-areas: "header header header header header header" "main main main main main main" "footer footer footer footer footer footer";
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-image: url(../imagenes/mapavalorant.jpg);
+  background-size: cover;
+  background-position-y: 45%;
+  align-items: center;
+}
+
+/*# sourceMappingURL=body.css.map */

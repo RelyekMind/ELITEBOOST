@@ -1,0 +1,83 @@
+.contacto-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.info-contacto {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.enlaces-utiles {
+  padding: 20px;
+  text-align: start;
+}
+
+.titulo-enlaces {
+  margin-bottom: 20px;
+}
+
+.link {
+  color: white;
+}
+
+.titulo-contacto {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.formulario-contacto {
+  flex-basis: 50%;
+}
+
+.campo {
+  margin-bottom: 1rem;
+  color: white;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2980b9;
+}
+
+.subtitulo-contacto {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: start;
+}
+
+.subtitulo-contacto2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: start;
+  color: white;
+}
+
+/*# sourceMappingURL=contacto.css.map */

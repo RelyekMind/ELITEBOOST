@@ -1,0 +1,22 @@
+//basics
+
+@import "./basics/colors.scss";
+
+@import "./basics/mixin.scss";
+
+//layout
+
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+@import "./layout/body.scss";
+@import "./layout/main.scss";
+
+//paginas
+@import "./paginas/index.scss";
+@import "./paginas/empleados.scss";
+@import "./paginas/contacto.scss";
+@import "./paginas/eloboost.scss";
+@import "./paginas/coaching.scss";
+
+//mediaquerys
+@import "./basics/mediaqueries.scss";
