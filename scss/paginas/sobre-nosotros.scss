@@ -1,3 +1,4 @@
+@import "../basics/colors";
 .sobre-nosotros-main{
         background-image: url(../imagenes/1309059.jpg);
         width: 100%;
@@ -11,7 +12,7 @@
             height: 70%;
             text-align: center;
             padding: 20px;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: $color-segundario;
             h3{
                 display: flex;
                 font-size: 70px;

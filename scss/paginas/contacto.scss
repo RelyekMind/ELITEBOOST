@@ -1,3 +1,4 @@
+@import "../basics/colors";
 .contacto-main {
     display: flex;
     flex-direction: column;
@@ -23,7 +24,7 @@
     margin-bottom: 20px;
   }
   .link{
-    color: white;
+    color: $color-terciario;
     transition: transform 0.3s ease;
   }
   .link:hover{
@@ -32,19 +33,19 @@
   .titulo-contacto {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: white;
+    color: $color-terciario;
   }
   
   .formulario-contacto {
     flex-basis: 50%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: $color-segundario;
     padding: 10px;
     border-radius: 9px;
   }
   
   .campo {
     margin-bottom: 1rem;
-    color: white;
+    color: $color-terciario;
   }
   
   label {
@@ -70,5 +71,5 @@
     font-size: 1rem;
     margin-bottom: 1rem;
     text-align: start;
-    color: white;
+    color: $color-terciario;
   }

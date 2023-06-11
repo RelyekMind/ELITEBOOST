@@ -1,3 +1,4 @@
+@import "../basics/colors";
 .eloboost-main{
     display: flex;
     flex-direction: column;
@@ -12,30 +13,30 @@
 
 .titulo {
   font-size: 2.5rem;
-  color: white;
+  color: $color-terciario;
 }
 #titulo-cont-izq{
-  color: white;
+  color: $color-terciario;
   margin-bottom: 1.5em;
 }
 #titulo-cont-der{
-  color: white;
+  color: $color-terciario;
   margin-bottom: 1.5em;
 }
 .subtitulo {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: white;
+  color: $color-terciario;
 }
 
 .descripcion {
   font-size: 1.3rem;
   margin-bottom: 2rem;
-  color: white;
+  color: $color-terciario;
 }
 
 .contenedor-izquierda {
-  background-color: rgba(33, 7, 30, 0.6);
+  background-color: $color-primario;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,11 +72,11 @@
 
 
 .item h4,p,h2{
-  color: white;
+  color: $color-terciario;
 }
 
 .contenedor-derecha {
-  background-color: rgba(33, 7, 30, 0.6);
+  background-color: $color-primario;
   width: 65%;
   border-radius: 0.5em;
   padding: 20px;
@@ -89,7 +90,7 @@
 
 .pagar h3{
   margin-bottom: 0.5em;
-  color: white;
+  color:$color-terciario;
 }
 
 

@@ -323,7 +323,7 @@ main {
 }
 
 .link {
-  color: white;
+  color: #fff;
   transition: transform 0.3s ease;
 }
 
@@ -334,7 +334,7 @@ main {
 .titulo-contacto {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: white;
+  color: #fff;
 }
 
 .formulario-contacto {
@@ -346,7 +346,7 @@ main {
 
 .campo {
   margin-bottom: 1rem;
-  color: white;
+  color: #fff;
 }
 
 label {
@@ -373,7 +373,7 @@ textarea {
   font-size: 1rem;
   margin-bottom: 1rem;
   text-align: start;
-  color: white;
+  color: #fff;
 }
 
 .eloboost-main {
@@ -390,29 +390,29 @@ textarea {
 
 .titulo {
   font-size: 2.5rem;
-  color: white;
+  color: #fff;
 }
 
 #titulo-cont-izq {
-  color: white;
+  color: #fff;
   margin-bottom: 1.5em;
 }
 
 #titulo-cont-der {
-  color: white;
+  color: #fff;
   margin-bottom: 1.5em;
 }
 
 .subtitulo {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: white;
+  color: #fff;
 }
 
 .descripcion {
   font-size: 1.3rem;
   margin-bottom: 2rem;
-  color: white;
+  color: #fff;
 }
 
 .contenedor-izquierda {
@@ -451,7 +451,7 @@ textarea {
 }
 
 .item h4, p, h2 {
-  color: white;
+  color: #fff;
 }
 
 .contenedor-derecha {
@@ -468,7 +468,7 @@ textarea {
 
 .pagar h3 {
   margin-bottom: 0.5em;
-  color: white;
+  color: #fff;
 }
 
 #icono-lp {
@@ -490,29 +490,29 @@ textarea {
 
 .titulo-coach {
   font-size: 2.5rem;
-  color: white;
+  color: #fff;
 }
 
 #titulo-cont-izq-coach {
-  color: white;
+  color: #fff;
   margin-bottom: 1.5em;
 }
 
 #titulo-cont-der-coach {
-  color: white;
+  color: #fff;
   margin-bottom: 1.5em;
 }
 
 .subtitulo-coach {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: white;
+  color: #fff;
 }
 
 .descripcion-coach {
   font-size: 1.3rem;
   margin-bottom: 2rem;
-  color: white;
+  color: #fff;
 }
 
 .contenedor-izquierda-coach {
@@ -596,11 +596,11 @@ textarea {
 }
 
 .contenido-pago-coach h3 {
-  color: white;
+  color: #fff;
 }
 
 .checkboxes label {
-  color: white;
+  color: #fff;
 }
 
 .sobre-nosotros-main {

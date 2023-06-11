@@ -1,4 +1,4 @@
-
+@import "../basics/colors";
 .sobre-nosotros {
     grid-area: sobreNosotros;  
     padding: 60px;
@@ -7,12 +7,12 @@
     h1{
         text-align: start;
         font-size: 3em;  
-        color: #fff;
+        color: $color-terciario;
       }
       h2{
         font-size: 1.6em;
         padding-top: 7px;
-        color: #fff;
+        color: $color-terciario;
       }
   }
   
@@ -25,7 +25,7 @@
         align-items: center;
         justify-content: center;
         padding: 30px;
-        color: #fff;
+        color: $color-terciario;
       }
   } 
   .cuerpo-elegirnos {
@@ -34,7 +34,7 @@
     grid-area: elegirnos-cuerpo;
     margin-left: 30px;
     margin-right: 30px;
-    color: #fff;
+    color: $color-terciario;
     
     .item-elegirnos {
         text-align: center;

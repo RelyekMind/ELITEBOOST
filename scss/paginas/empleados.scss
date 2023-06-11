@@ -1,3 +1,4 @@
+@import "../basics/colors";
 .main-container{
     display: flex;
     position: relative;
@@ -5,7 +6,7 @@
     padding: 2%;
   }
   .text-center{
-    color: #fff;
+    color: $color-terciario;
     padding: 20px;
     margin-bottom: 30px;
   }
@@ -33,7 +34,7 @@
   .card {
     padding: 30px;
     margin-bottom: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: $color-segundario;
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease;
@@ -59,7 +60,7 @@
   .card-title {
     margin-top: 10px;
     font-size: 1.8em;
-    color: #fff;
+    color: $color-terciario;
   }
   
   .small-image{

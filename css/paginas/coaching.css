@@ -13,29 +13,29 @@
 
 .titulo-coach {
   font-size: 2.5rem;
-  color: white;
+  color: #fff;
 }
 
 #titulo-cont-izq-coach {
-  color: white;
+  color: #fff;
   margin-bottom: 1.5em;
 }
 
 #titulo-cont-der-coach {
-  color: white;
+  color: #fff;
   margin-bottom: 1.5em;
 }
 
 .subtitulo-coach {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: white;
+  color: #fff;
 }
 
 .descripcion-coach {
   font-size: 1.3rem;
   margin-bottom: 2rem;
-  color: white;
+  color: #fff;
 }
 
 .contenedor-izquierda-coach {
@@ -119,11 +119,11 @@
 }
 
 .contenido-pago-coach h3 {
-  color: white;
+  color: #fff;
 }
 
 .checkboxes label {
-  color: white;
+  color: #fff;
 }
 
 /*# sourceMappingURL=coaching.css.map */
