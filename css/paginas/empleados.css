@@ -15,7 +15,7 @@
   display: flex;
   position: relative;
   width: 87%;
-  background-image: url(../../imagenes/jett.jpg);
+  background-image: url(../imagenes/jett.jpg);
   background-size: cover;
   background-position: 70% 0%;
   z-index: 1;
