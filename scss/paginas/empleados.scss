@@ -3,7 +3,6 @@
     position: relative;
     z-index: 1;
     padding: 2%;
-    
   }
   .text-center{
     color: #fff;
@@ -13,8 +12,10 @@
   .container-fluid {
     display: flex;
     position: relative;
-    width: 100%;
-    background-color: #172A45;
+    width: 87%;
+    background-image: url(../../imagenes/jett.jpg);
+    background-size: cover;
+    background-position: 70% 0%;
     z-index: 1;
     flex-direction: column;
     justify-content: center;
@@ -32,8 +33,14 @@
   .card {
     padding: 30px;
     margin-bottom: 20px;
-    
-    background-color: #0A192F;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
   }
   .card-img-top {
     margin-top: 60px;

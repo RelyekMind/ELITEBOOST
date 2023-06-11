@@ -4,7 +4,9 @@
     align-items: center;
     padding: 3em;
     text-align: center; 
-    background-color: #172A45;
+    background-image: url(../../imagenes/reyna.png);
+    background-size: cover;
+    background-position: 45% 0%;
     width: auto;
     border-radius: 3em;
     
@@ -35,7 +37,7 @@
 }
 .contenedor-izquierda-coach {
   
-  background-color: #0A192F;
+  background-color: rgba(33, 7, 30, 0.6);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,11 +48,11 @@
 }
 .contenedor-derecha-coach {
   padding: 20px;
-  background-color: #0A192F;
+  background-color: rgba(33, 7, 30, 0.6); 
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  width: auto
+  width: 65%;
 }
 
 .rango-coach {
@@ -64,24 +66,24 @@ max-width: 70px;
 max-height: 70px;
 margin-right: 1rem;
 }
-
-
-
 .rectangulo-coach {
   flex: 1;
   width: 250px;
   height: 60px;
-  background-color: #172A45;
+  background-color: rgba(55, 7, 49, 0.9);
   display: flex;
   justify-content: center;
   align-items: center;
   margin-left: 1rem;
   border-radius: 7px;
+  transition: transform 0.3s ease;
+}
+.rectangulo-coach:hover{
+  transform: scale(1.1);
 }
 .rectangulo-coach p{
   margin: 0;
 }
-
 .checkboxes {
   display: flex;
   justify-content: center;
@@ -90,7 +92,6 @@ margin-right: 1rem;
   align-items: flex-start;
   flex-wrap: wrap;
 }
-
 .checkboxes div{
   display: flex;
   flex-direction: column;

@@ -1,10 +1,19 @@
-@media (max-width: 768px) {
+@media (max-width: 576px) {
+  header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
   .checkbtn {
     display: block;
     margin-top: 25px;
     margin-left: 15px;
   }
-  ul {
+  nav {
+    margin: 0;
+    padding: 0;
+  }
+  nav ul {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -42,45 +51,95 @@
     flex-basis: 45%;
     margin-bottom: 20px;
   }
-  #main-container {
-    margin-top: 70px;
+  .sobre-nosotros {
+    height: auto;
+  }
+  .sobre-nosotros h1 {
+    font-size: 35px;
   }
   .sobre-nosotros h2 {
-    font-size: 2.7em;
+    font-size: 20px;
     color: #fff;
+    text-align: start;
   }
-  .sobre-nosotros h3 {
-    font-size: 1.5em;
-    padding-top: 7px;
-    color: #fff;
+  .sobre-nosotros h4 {
+    margin-top: 10px;
+    font-size: 13px;
   }
-}
-@media (max-width: 600px) {
-  .sobre-nosotros h2 {
-    font-size: 2.4em;
-    color: #fff;
-  }
-  .sobre-nosotros h3 {
-    font-size: 1.1em;
-    padding-top: 7px;
-    color: #fff;
-  }
-  .enlace {
-    position: absolute;
-    padding: 20px 50px;
-    display: flex;
-  }
-}
-@media screen and (max-width: 768px) {
-  .contenedor-izquierda-coach {
-    flex-direction: column;
-  }
-  .rango-coach img {
-    margin-right: 0;
-    margin-bottom: 1rem;
-  }
-  .rectangulo-coach {
+  .eloboost-main {
+    background-size: cover;
+    background-position: 47% 5%;
     width: 100%;
+    margin: 0;
+    justify-content: center;
+  }
+  .eloboost-main h1 {
+    font-size: 34px;
+  }
+  .eloboost-main h2 {
+    font-size: 20px;
+  }
+  .eloboost-main h3 {
+    font-size: 20px;
+  }
+  .eloboost-main h4 {
+    font-size: 23px;
+    margin: 10px;
+  }
+  .eloboost-main p {
+    font-size: 17px;
+  }
+  .eloboost-main .item img {
+    max-height: 100px;
+    justify-self: center;
+    justify-content: center;
+  }
+  .eloboost-main .contenedor-derecha {
+    width: 100%;
+  }
+  .eloboost-main .contenedor-derecha h3 {
+    font-size: 18px;
+  }
+  .coaching-main {
+    background-position: 63% 5%;
+  }
+  .coaching-main h1 {
+    font-size: 34px;
+  }
+  .coaching-main h2 {
+    font-size: 20px;
+  }
+  .coaching-main h3 {
+    font-size: 20px;
+  }
+  .coaching-main .rectangulo-coach {
+    padding: 10px;
+  }
+  .coaching-main .contenedor-derecha-coach {
+    width: 100%;
+  }
+  .coaching-main .contenedor-derecha-coach h3 {
+    font-size: 15px;
+  }
+  .sobre-nosotros-main {
+    width: 100%;
+    height: 800px;
+    border-radius: 20px;
+    background-position: 34% 0%;
+  }
+  .sobre-nosotros-main .cuadrado {
+    width: 80% !important;
+    height: auto !important;
+  }
+  .sobre-nosotros-main .cuadrado p {
+    font-size: 15px !important;
+    margin: 10px;
+  }
+  .sobre-nosotros-main .cuadrado h3 {
+    font-size: 24px;
+  }
+  .contacto-main {
+    background-position: 25% 20%;
   }
 }
 

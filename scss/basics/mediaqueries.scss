@@ -1,32 +1,34 @@
-@media (max-width: 768px) {
+@media (max-width: 576px) {
+  //HEADER
+  header{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
   .checkbtn {
     display: block;
     margin-top: 25px;
     margin-left: 15px;
   }
-
-  ul {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-image: url(../imagenes/mapavalorant.jpg);
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all 0.5s;
-    z-index: 10;
-  }
-
   nav {
+    margin: 0;
+    padding: 0;
     ul {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background-image: url(../imagenes/mapavalorant.jpg);
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all 0.5s;
+      z-index: 10;
       li {
         display: block;
         margin: 50px 0;
         line-height: 30px;
-
         a {
           font-size: 20px;
-
           &:hover,
           &.active {
             background: none;
@@ -36,78 +38,119 @@
       }
     }
   }
-
   #check:checked ~ ul {
     left: 0;
   }
-
   .enlace {
     position: absolute;
     padding: 20px 50px;
     display: flex;
   }
 
+  //MAIN INDEX
   .cuerpo-elegirnos {
     flex-wrap: wrap;
   }
-
   .item-elegirnos {
     flex-basis: 45%;
     margin-bottom: 20px;
   }
-
-  #main-container {
-    margin-top: 70px;
-  }
-
   .sobre-nosotros {
+    height: auto;
+    h1{
+      font-size: 35px;
+    }
     h2 {
-      font-size: 2.7em;
+      font-size: 20px;
       color: #fff;
+      text-align: start;
     }
-
-    h3 {
-      font-size: 1.5em;
-      padding-top: 7px;
-      color: #fff;
-    }
-  }
-}
-
-@media (max-width: 600px) {
-  .sobre-nosotros {
-    h2 {
-      font-size: 2.4em;
-      color: #fff;
-    }
-
-    h3 {
-      font-size: 1.1em;
-      padding-top: 7px;
-      color: #fff;
+    h4{
+      margin-top: 10px;
+      font-size: 13px;
     }
   }
 
-  .enlace {
-    position: absolute;
-    padding: 20px 50px;
-    display: flex;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .contenedor-izquierda-coach {
-    flex-direction: column;
-  }
-
-  .rango-coach {
-    img {
-      margin-right: 0;
-      margin-bottom: 1rem;
-    }
-  }
-
-  .rectangulo-coach {
+  //MAIN ELOBOOST
+  .eloboost-main{
+    background-size: cover;
+    background-position: 47% 5%;
     width: 100%;
+    margin: 0;
+    justify-content: center;
+    h1{
+      font-size: 34px;
+    }
+    h2{
+      font-size: 20px;
+    }
+    h3{
+      font-size: 20px;
+    }
+    h4{
+      font-size: 23px;
+      margin: 10px;
+    }
+    p{
+      font-size: 17px;
+    }
+    .item{
+      img{
+        max-height: 100px;
+        justify-self: center;
+        justify-content: center;
+      }
+    }
+    .contenedor-derecha{
+      width: 100%;
+        h3{
+          font-size: 18px;
+        }
+    }
   }
+  //MAIN COACHING
+  .coaching-main{
+    background-position: 63% 5%;
+    h1{
+      font-size: 34px;
+    }
+    h2{
+      font-size: 20px;
+    }
+    h3{
+      font-size: 20px;
+    }
+  .rectangulo-coach{
+    padding: 10px;
+  }
+  .contenedor-derecha-coach{
+    width: 100%;
+      h3{
+        font-size: 15px;
+      }
+  }
+  }
+  //SOBRE NOSOTROS MAIN
+  .sobre-nosotros-main{
+    width: 100%;
+    height: 800px;
+    border-radius: 20px;
+    background-position: 34% 0%;
+    .cuadrado {
+        
+        width: 80% !important;
+        height: auto !important;
+        p{
+            font-size: 15px !important;
+            margin: 10px;
+        }
+        h3{
+          font-size: 24px;
+        }
+    }
+}
+//CONTACTO MAIN
+.contacto-main{
+  background-position: 25% 20%;
+}
 }

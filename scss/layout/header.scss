@@ -1,13 +1,16 @@
 header{
   grid-area: header;
+  padding-top: 20px;
 }
-
+nav{
+  max-height: 300px;
+}
 .icono-name{
   color: #fff;
 }
 .enlace{
   position: absolute;
-  padding: 70px 50px;
+  padding: 50px 40px;
   display: flex;
 }
 .logo{
@@ -33,7 +36,7 @@ nav ul{
 }
 
 li a.active, li a:hover{
-  background: black;
+  background: rgba(33, 7, 30, 0.9);
   transition: .5s;
 }
 .checkbtn{

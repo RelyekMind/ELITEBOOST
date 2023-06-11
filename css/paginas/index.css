@@ -1,8 +1,11 @@
 .sobre-nosotros {
   grid-area: sobreNosotros;
   padding: 60px;
+  height: 300px;
+  margin-bottom: 2em;
 }
 .sobre-nosotros h1 {
+  text-align: start;
   font-size: 3em;
   color: #fff;
 }
@@ -12,21 +15,8 @@
   color: #fff;
 }
 
-.imagen-sobre-nosotros-container {
-  grid-area: sobreNosotros-imagen;
-  overflow: hidden;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 60px;
-  height: 250px;
-}
-.imagen-sobre-nosotros-container #imagen-sobrenosotros {
-  width: auto;
-  height: 13em;
-}
-
 .elegirnos {
+  font-size: 23px;
   grid-area: elegirnos-titulo/1/elegirnos-cuerpo/-1;
 }
 .elegirnos .elegirnos h2 {
@@ -48,9 +38,17 @@
 }
 .cuerpo-elegirnos .item-elegirnos {
   text-align: center;
+  transition: transform 0.3s ease;
 }
 .cuerpo-elegirnos .item-elegirnos img {
+  margin-top: 2.5em;
+  margin-bottom: 0.7em;
   width: 70px;
+  filter: invert(100%) sepia(0%) saturate(7485%) hue-rotate(113deg) brightness(115%) contrast(103%);
+}
+
+.item-elegirnos:hover {
+  transform: scale(1.1);
 }
 
 /*# sourceMappingURL=index.css.map */

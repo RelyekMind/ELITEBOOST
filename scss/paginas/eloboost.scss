@@ -4,10 +4,10 @@
     align-items: center;
     padding: 3em;
     text-align: center; 
-    background-color: #172A45;
+    background-image: url(../../imagenes/omen.png.jpg);
+    background-position: 34% 5%;
     width: auto;
     border-radius: 3em;
-
 }
 
 .titulo {
@@ -35,7 +35,7 @@
 }
 
 .contenedor-izquierda {
-  background-color: #0A192F;
+  background-color: rgba(33, 7, 30, 0.6);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,6 +62,11 @@
   img{
     max-height: 8rem;
   }
+  transition: transform 0.3s ease;
+}
+
+.item:hover{
+  transform: scale(1.1);
 }
 
 
@@ -70,8 +75,8 @@
 }
 
 .contenedor-derecha {
-  background-color: #0A192F;
-  width: auto;
+  background-color: rgba(33, 7, 30, 0.6);
+  width: 65%;
   border-radius: 0.5em;
   padding: 20px;
 }
@@ -87,15 +92,6 @@
   color: white;
 }
 
-button {
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
-  background-color: #3498db;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 1rem;
-}
 
 #icono-lp{
   font-size: 5em;
